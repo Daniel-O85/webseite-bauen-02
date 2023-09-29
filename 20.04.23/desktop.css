@@ -1,0 +1,503 @@
+/**** Einstellungen greifen ab Displaygrößen von mindestens 600 Pixeln ****/
+
+/*@media screen and (min-width: 600px) {*/
+    
+    /**** KOPFZEILE *****/
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /*** Breite und Hintergrundfarbe angepasst,
+         Text mittig zentriert ***/
+    header 
+    .header-banner {
+        width: 100%;
+        background-color: rgb(85, 185, 85);
+        text-align: center;
+    }
+
+    /*** Inhalt wird flexibel und horizintal mittig zentriert,
+         Breite festgelegt, oberen äusseren abstand gegeben ****/
+    header 
+    .header-info{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    /*** äußeren abstand gegeben farbe geändert ****/
+    header .header-info a{
+        margin: 5px;
+        color: black;
+    }
+
+    /*** Rechten Rahemen gegeben ****/
+    header 
+    .header-info
+    .header-info-hilfe{
+        border-right: solid 1px black;
+    }
+
+    /*** Rechten Rahmen gegeben ****/
+    header 
+    .header-info
+    .header-info-kosten{
+        border-right: solid 1px black;
+    }
+
+    /*** Inhalt wir flexibel mit Raum dazwischen,
+         Breite festgelegt, inneren Abstand gegeben,
+         vertikal mittig zentriert, Rahmen gegeben ****/
+    header 
+    .header-mitte{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px 20px;
+        align-items: center;
+        border-bottom: solid 1px lightgrey;
+    }
+
+    /*** Inhalt wird flexibel und vertikal mittig zentriert ****/
+    header
+    .header-logo{
+        display: flex;
+        align-items: center;
+    }
+
+    /*** Linken äußeren Abstand gegeben, Farbe geändert ****/
+    header 
+    .header-logo
+    h1{
+        margin-left: 10px;
+        color: rgb(85, 185, 85);;
+    }
+
+    /*** Feste Breite gegeben ****/
+    header 
+    img{
+        width: 35px;
+    }
+
+    /*** Inhalt wir flexibel ****/
+    header 
+    .header-seitenlinks{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*** Rechten und Linken äußeren Abstand gegeben, Farbe geändert ****/
+    header 
+    .header-seitenlinks
+    a{
+        margin-left: 30px;
+        margin-right: 30px;
+        color: black;
+    }
+
+    /*** Rechten und Linken äußeren Abstand gegeben ****/
+    header 
+    .header-standort-warenkorb
+    img{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /*** Inhalt wird flexibel mit Platz dazwischen 
+         feste Breite gegeben, Rahemen gegeben ****/
+    header 
+    .header-unten{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: solid 1px lightgrey;
+    }
+
+    /*** Inhalt wird flexibel, äußeren Abstand gegeben ****/
+    header 
+    .header-unten
+    .header-artikel{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+
+    /*** äußeren Abstand gegeben, farbe und schriftgröße geändert ****/
+    header 
+    .header-unten
+    .header-artikel
+    a{
+        margin: 0px 50px;
+        color: black;
+        font-size: 20px;
+    }
+
+    /*** Feste Breite und Höhe gegeben, äußeren Abstand gegeben
+         Rahmen entfernt, Hintergrundfarbe gegeben, Schriftgröße geändert ****/
+    header 
+    .header-unten
+    .header-suche
+    input{
+        width: 300px;
+        height: 38px;
+        margin: 8px 10px;
+        border: none;
+        background-color: rgba(211, 211, 211, 0.314);
+        font-size: 20px;
+    }
+
+    /*** HAUPTINHALT ***/
+
+    /*** Feste Breite gegeben, Text horizontal mittig zentriert ****/
+    main 
+    h1{
+        width: 100%;
+        text-align: center;
+    }
+
+    /*** Inhalt wird flexibel und horizontal mittig zentriert,
+         Breite festgelegt****/
+    main 
+    .main-kategorie-bilder{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 400px;
+    }
+
+    /*** Hintergrundbild gegeben, Breite festgelegt, Hintergrung zentriert
+         Hintergrund größe angepasst, Inhalt wird flexibel, horizontal zentriert 
+         und nach unten verschoben, unteren inneren Abstand gegeben, äußeren Abstand gegeben ****/
+    main 
+    .main-kategorie-bilder
+    .main-bilder-damen{
+        background-image: url(./bilder/damen.jpg);
+        width: 300px;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: end;
+        padding-bottom: 20px;
+        margin: 0px 10px;
+    }
+
+    /*** Hintergrundbild gegeben, Breite festgelegt, Hintergrung zentriert
+         Hintergrund größe angepasst, Inhalt wird flexibel, horizontal zentriert 
+         und nach unten verschoben, unteren inneren Abstand gegeben, äußeren Abstand gegeben ****/
+    main 
+    .main-kategorie-bilder
+    .main-bilder-kinder{
+        background-image: url(./bilder/kinder.jpg);
+        width: 300px;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: end;
+        padding-bottom: 20px;
+        margin: 0px 10px;
+    }
+
+    /*** Hintergrundbild gegeben, Breite festgelegt, Hintergrung zentriert
+         Hintergrund größe angepasst, Inhalt wird flexibel, horizontal zentriert 
+         und nach unten verschoben, unteren inneren Abstand gegeben, äußeren Abstand gegeben ****/
+    main 
+    .main-kategorie-bilder
+    .main-bilder-herren{
+        background-image: url(./bilder/herren.jpg);
+        width: 300px;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: end;
+        padding-bottom: 20px;
+        margin: 0px 10px;
+    }
+
+    /*** Feste Höhe gegeben, Hintergrund und 
+         Rahmen entfernt, Schriftgöße und Farbe geändert ****/
+    main 
+    .main-kategorie-bilder
+    button{
+        height: 30px;
+        background: none;
+        border: none;
+        font-size: 20px;
+        color: white;
+    }
+
+    /*** HAUPTINHALT BANNER ***/
+
+    /*** Inhalt wird flexibel mit Platz rundherum,
+         Hintergrundfarbe gegeben, äußeren Abstand gegeben ****/
+    main 
+    .main-banner-angebot{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: rgb(85, 185, 85);
+        margin: 20px 0px;
+        }
+
+     /*** Schriftgröße geändert, äußeren Abstand gegeben ****/
+        main 
+    .main-banner-angebot
+    .banner-box-links{
+        font-size: 25px;
+        margin: 30px 0px;
+    }
+    
+    /*** Farbe geändert ****/
+    .main-banner-angebot
+    .banner-box-links
+    a{
+        color: black;
+    }
+
+    /*** Schriftgröße geändert ****/
+    .main-banner-angebot
+    .banner-box-rechts{
+        font-size: 20px;
+    }
+    /*** äußeren Abstand gegeben ****/
+    main 
+    .main-texte{
+        margin: 50px 20px 200px 20px;
+    }
+
+    /*** FOOTER ***/
+
+    /*** Hintergrundfarbe gegeben ****/
+    footer{
+        background-color: rgba(211, 211, 211, 0.314);
+    }
+
+    /*** Feste Breite gegeben, Text horizontal mittig zentriert
+         inneren Abstand gegeben ****/
+    footer 
+    h2{
+        width: 100%;
+        text-align: center;
+        padding: 50px 0px;
+    }
+
+    /*** Inhalt wird flexibel mit Platz rundherum ****/
+    footer 
+    .footer-head{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    /*** Feste Breite und Höhe gegeben, rechten äußeren Abstand gegeben ****/
+    footer 
+    .footer-head
+    img{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    /*** Inhalt wird flexibel, Schriftgröße geändert ****/
+    footer 
+    .footer-head
+    .footer-head-price{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 20px;
+
+    }
+
+    /*** Inhalt wird flexibel, linken Rahmen gegeben, linken inneren Abstand gegeben ****/
+    footer 
+    .footer-head
+    .footer-head-shoe{
+        display: flex;
+        flex-wrap: wrap;
+        border-left: solid 2px lightgrey;
+        padding-left: 15px;
+    }
+
+    /*** Inhalt wird flexibel, linken Rahmen gegeben, linken inneren Abstand gegeben  ****/
+    footer 
+    .footer-head
+    .footer-head-bag{
+        display: flex;
+        flex-wrap: wrap;
+        border-left: solid 2px lightgrey;
+        padding-left: 15px;
+    }
+    /*** Footer Bild ***/
+
+    /***  Hintergrundbild gegeben, Breite festgelegt, Hintergrung zentriert
+         Hintergrund größe angepasst, Inhalt wird flexibel, horizontal zentriert 
+         und nach unten verschoben, oberen äußeren Abstand gegeben ****/
+    footer 
+    .footer-img{
+        background-image: url(./bilder/footer-img.jpg);
+        height: 400px;
+        background-position-y: 23%;
+        background-size: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    /*** Schriftgröße gegeben, äußeren Abstand gegeben, 
+         Hintergrundfarbe gegeben, inneren Abstand gegeben ****/
+    footer 
+    .footer-img
+    .footer-img-text{
+        font-size: 25px;
+        margin: 0px 20px;
+        background-color: white;
+        padding: 0px 20px 20px
+    }
+
+    /*** Schriftgröße und Zeilenhöhe geändert ****/
+    footer 
+    .footer-img
+    .footer-img-text
+    b{
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    /*** Farbe geändert ****/
+    footer 
+    .footer-img
+    .footer-img-text
+    a{
+        color: black;
+    }
+
+    /*** Text horizontal mittig zentriert, oberen äußeren Abstand gegeben
+         Hintergrundfarbe gegeben, Höhe geändert ****/
+    footer 
+    .footer-img-hinweis{
+        text-align: center;
+        margin-top: -15px;
+        background-color: white;
+        height: 50px;
+    }
+
+    /*** Footer Zahlung, Versand etc. ***/
+
+    /*** Feste Breite gegeben ****/
+    footer 
+    .footer-center
+    img{
+        width: 50px;
+    }
+
+    /*** Inhalt wird flexibel mit Platz rundherum,
+         Hintergrundfarbe gegeben, inneren oberen Abstand gegeben ****/
+    footer 
+    .footer-center{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+        justify-content: space-around;
+        padding-top: 100px;
+    }
+
+    /*** inneren unteren Abstand gegeben ****/
+    footer 
+    .footer-center 
+    th{
+        padding-bottom: 40px;
+    }
+
+    /*** äußeren unteren Abstand gegeben ****/
+    footer 
+    .footer-center
+    table{
+        margin-bottom: 100px;
+    }
+
+    /*** Inhalt wird flexibel mit Platz dazwischen,
+         Text links ausgerichtet, äußeren Abstand gegeben ****/
+    footer 
+    .footer-bottom{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: left;
+        margin: 50px 20px;
+    }
+
+    /*** inneren unteren Abstand gegeben,
+         Schriftgröße geändert ****/
+    footer 
+    .footer-bottom
+    th{
+    padding-bottom: 25px;
+    font-size: 20px;
+    }
+
+    /*** Farbe geändert ****/
+    footer 
+    .footer-filialen 
+    a{
+        color: rgb(85, 185, 85);
+    }
+    /*** FOOTER LINKS ***/
+
+    /*** Feste Breite gegeben ****/
+    footer 
+    .footer-links 
+    .footer-app
+    img,
+    footer 
+    .footer-links
+    .footer-social 
+    img{
+       width: 30px;
+    }
+
+    /*** Inhalt wird flexibel mit Platz dazwischen,
+          Text links ausgerichtet, inneren Abstand gegeben****/
+    footer 
+    .footer-links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: left;
+        padding: 100px 20px;
+    }
+
+    /*** Feste Breite gegeben, Text horizontal mittig zentriert
+         oberen äußeren Abstand gegeben ****/
+    footer 
+    .footer-logo{
+        width: 100%;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    /*** unteren inneren Abstand gegeben, Schriftgröße geändert ****/
+    footer 
+    .footer-links
+    th{
+    padding-bottom: 25px;
+    font-size: 20px;
+    }
+
+    /*** Feste Höhe gegeben ****/
+    footer 
+    .footer-logo
+    img{
+        height: 100px;
+    }
+/*}*/
